@@ -1,7 +1,8 @@
 return {
-	"bluz71/vim-nightfly-guicolors",
-	priority = 1000,
-	config = function()
-		vim.cmd([[colorscheme nightfly]])
-	end,
+  "drewtempelmeyer/palenight.vim",
+  priority = 1000,
+  config = function()
+    vim.cmd([[colorscheme palenight]])
+    vim.g.palenight_terminal_italics = 1
+  end,
 }

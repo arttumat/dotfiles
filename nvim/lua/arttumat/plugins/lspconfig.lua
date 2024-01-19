@@ -82,7 +82,6 @@ return {
       on_attach = on_attach,
     })
 
-
     lspconfig["angularls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
@@ -139,6 +138,12 @@ return {
 
     -- configure python server
     lspconfig["pyright"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    lspconfig["sourcekit"].setup({
+      cmd = { "sourcekit-lsp" },
       capabilities = capabilities,
       on_attach = on_attach,
     })
