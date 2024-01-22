@@ -6,6 +6,9 @@ return {
     vim.o.timeoutlen = 300
   end,
   opts = {
+    triggers_nowait = {
+      "<leader>",
+    },
     triggers_blacklist = {
       -- list of mode / prefixes that should never be hooked by WhichKey
       -- this is mostly relevant for keymaps that start with a native binding
