@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#D8C9ABFF",
+        "font" : "FiraCode Nerd Font",
+        "color" : "#858D7FFF"
+      },
+      "shortcut" : {
+        "size" : 14,
+        "colorSelected" : "#D39AB6FF",
+        "font" : "FiraCode Nerd Font",
+        "color" : "#A7BF80FF"
+      },
+      "backgroundSelected" : "#313D42FF",
+      "text" : {
+        "size" : 13,
+        "colorSelected" : "#EEEFF6FF",
+        "font" : "FiraCode Nerd Font",
+        "color" : "#D8C9ABFF"
+      },
+      "iconPaddingHorizontal" : 9,
+      "roundness" : 8,
+      "paddingVertical" : 6,
+      "iconSize" : 24
+    },
+    "search" : {
+      "backgroundSelected" : "#B3D7FFFF",
+      "paddingHorizontal" : 8,
+      "spacing" : 8,
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#000000FF",
+        "font" : "FiraCode Nerd Font",
+        "color" : "#EDEEF6FF"
+      },
+      "background" : "#313D42FF",
+      "roundness" : 8,
+      "paddingVertical" : 5
+    },
+    "window" : {
+      "color" : "#1E2326FF",
+      "paddingHorizontal" : 8,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 18,
+      "roundness" : 8,
+      "paddingVertical" : 8
+    },
+    "credit" : "Arttu Matilainen",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#E58182FF",
+      "thickness" : 2
+    },
+    "name" : "Everforest"
+  }
+}

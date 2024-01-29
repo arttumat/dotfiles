@@ -38,6 +38,9 @@ keymap.set("i", "<A-k>", "<Esc>:m .-2<CR>==gi", { noremap = true, desc = "Move l
 keymap.set("x", "<A-j>", ":m '>+1<CR>gv=gv", { noremap = true, desc = "Move line down" })
 keymap.set("x", "<A-k>", ":m '<-2<CR>gv=gv", { noremap = true, desc = "Move line up" })
 
+keymap.set("n", "<Leader>rr", [[:%s///g<Left><Left>]], { noremap = true, silent = true }) -- replace all
+keymap.set("n", "<Leader>rt", [[:%s///gc<Left><Left><Left>]], { noremap = true, silent = true }) -- replace all with confirmation
+
 if vim.g.vscode then
   vim.cmd([[
         function! s:manageEditorSize(...)
