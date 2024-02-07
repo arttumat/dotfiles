@@ -1,9 +1,8 @@
-
 # pyright: reportMissingImports=false
 from datetime import datetime
+
 from kitty.boss import get_boss
 from kitty.fast_data_types import Screen, add_timer, get_options
-from kitty.utils import color_as_int
 from kitty.tab_bar import (
     DrawData,
     ExtraData,
@@ -13,10 +12,11 @@ from kitty.tab_bar import (
     draw_attributed_string,
     draw_title,
 )
+from kitty.utils import color_as_int
 
 opts = get_options()
-icon_fg = as_rgb(color_as_int(opts.color16))
-icon_bg = as_rgb(color_as_int(opts.color8))
+icon_fg = as_rgb(color_as_int(opts.color1))
+icon_bg = as_rgb(color_as_int(opts.background))
 bat_text_color = as_rgb(color_as_int(opts.color15))
 clock_color = as_rgb(color_as_int(opts.color15))
 date_color = as_rgb(color_as_int(opts.color8))
@@ -165,6 +165,7 @@ def get_battery_cells() -> list:
 
 timer_id = None
 right_status_length = -1
+
 
 def draw_tab(
     draw_data: DrawData,
