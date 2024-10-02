@@ -8,7 +8,7 @@ return {
     -- configure lualine with modified theme
     lualine.setup({
       options = {
-        theme = "everforest",
+        theme = "oxocarbon",
       },
       sections = {
         lualine_x = {

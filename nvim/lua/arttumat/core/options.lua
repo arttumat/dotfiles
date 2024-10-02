@@ -42,3 +42,9 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false
 
 opt.hidden = true -- allow switching between buffers without saving
+
+opt.title = true
+
+opt.titlestring = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+
+opt.titlelen = 85

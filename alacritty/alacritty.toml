@@ -1,0 +1,86 @@
+[shell]
+program		= "/bin/zsh"
+args		= [ "-l", "-c", "tmux attach || tmux" ]
+
+[env]
+TERM		= "xterm-256color"
+
+[window]
+dimensions	= { columns = 132, lines = 30 }
+padding		= { x = 10, y = 10 }
+decorations	= "none"
+opacity		= 0.89
+blur		= true
+option_as_alt = "OnlyLeft"
+
+[scrolling]
+history = 65535
+
+[font]
+normal		= { family = "BlexMono Nerd Font", style = "Regular" }
+bold		= { family = "BlexMono Nerd Font", style = "Bold" }
+italic		= { family = "BlexMono Nerd Font", style = "Italic" }
+bold_italic	= { family = "BlexMono Nerd Font", style = "Bold Italic"}
+size		= 14
+offset		= { x = 0, y = 0 }
+glyph_offset	= { x = 0, y = 0 }
+
+[colors.primary]
+background	= '#161616'
+foreground	= '#ffffff'
+#dim_foreground		= '#E5E8EC'
+#bright_foreground	= '#F4F6F9'
+#dim_background		= '#121923'
+#bright_background	= '#323943'
+
+# Normal colors
+[colors.normal]
+black		= '#262626'
+red		= '#ee5396'
+green		= '#42be65'
+yellow		= '#ffe97b'
+blue		= '#33b1ff'
+magenta		= '#ff7eb6'
+cyan		= '#3ddbd9'
+white		= '#dde1e6'
+
+# Bright colors
+[colors.bright]
+black		= '#393939'
+red		= '#ee5396'
+green		= '#42be65'
+yellow		= '#ffe97b'
+blue		= '#33b1ff'
+magenta		= '#ff7eb6'
+cyan		= '#3ddbd9'
+white		= '#ffffff'
+
+[colors]
+# indexed_colors = [
+#	{ index 16, color = "#FFFFFF" }
+# ]
+draw_bold_text_with_bright_colors = true
+
+[mouse]
+hide_when_typing	= false
+bindings	= [
+	{ mouse = "Right", action = "Copy" },
+	{ mouse = "Middle", action = "Paste" }
+]
+
+[cursor]
+blink_interval	= 500
+blink_timeout	= 0
+unfocused_hollow	= true
+
+[cursor.style]
+shape		= "Block"
+blinking	= "Always"
+
+[keyboard]
+bindings = [
+	{ key = 'V', mods = "Control|Shift", action = "Paste" },
+	{ key = 'C', mods = "Control|Shift", action = "Copy" },
+  { key = 'N',  mods = "Command", action = "CreateNewWindow" }
+]
+
