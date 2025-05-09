@@ -8,7 +8,8 @@ return {
     -- configure lualine with modified theme
     lualine.setup({
       options = {
-        theme = "oxocarbon",
+        -- theme = "oxocarbon",
+        theme = "tokyonight",
       },
       sections = {
         lualine_x = {

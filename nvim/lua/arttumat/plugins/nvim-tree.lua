@@ -3,7 +3,7 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {
     {
-      "<leader>ee",
+      "<leader>EE",
       function()
         require("nvim-tree.api").tree.toggle({ find_file = true, focus = true })
       end,
@@ -20,6 +20,7 @@ return {
     -- change color for arrows in tree to light blue
     vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#3FC5FF ]])
     vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]])
+    vim.cmd([[hi NvimTreeNormal guibg=NONE ctermbg=NONE]])
 
     -- configure nvim-tree
     nvimtree.setup({

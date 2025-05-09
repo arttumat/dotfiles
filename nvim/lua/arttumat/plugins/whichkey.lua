@@ -5,15 +5,18 @@ return {
     vim.o.timeout = true
     vim.o.timeoutlen = 300
   end,
+  dependencies = {
+    "echasnovski/mini.icons",
+  },
   opts = {
-    triggers_nowait = {
-      "<leader>",
-    },
-    triggers_blacklist = {
-      -- list of mode / prefixes that should never be hooked by WhichKey
-      -- this is mostly relevant for keymaps that start with a native binding
-      i = { "j", "k", "<leader>" },
-      v = { "j", "k" },
+    spec = {
+      { "<leader>a", group = "ai" },
+      { "gm", group = "+Copilot chat" },
+      { "gmh", desc = "Show help" },
+      { "gmd", desc = "Show diff" },
+      { "gmp", desc = "Show system prompt" },
+      { "gms", desc = "Show selection" },
+      { "gmy", desc = "Yank diff" },
     },
   },
 }
